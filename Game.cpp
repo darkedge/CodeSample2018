@@ -2,8 +2,10 @@
 #include "Game.h"
 
 
-Game::Game()
+Game::Game(HWND hWnd) :
+    graphics(hWnd)
 {
+    
 }
 
 
@@ -13,5 +15,5 @@ Game::~Game()
 
 void Game::Update()
 {
-
+    this->graphics.Update();
 }
